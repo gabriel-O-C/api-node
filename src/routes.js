@@ -15,4 +15,14 @@ module.exports = [
     method: 'POST',
     handler: UserControler.createUser,
   },
+  {
+    endpoint: '/users/:id',
+    method: 'PUT',
+    handler: UserControler.updateUser,
+  },
+  {
+    endpoint: '/users/:id',
+    method: 'DELETE',
+    handler: UserControler.deleteUser,
+  },
 ]
